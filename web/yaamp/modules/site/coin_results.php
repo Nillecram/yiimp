@@ -29,8 +29,8 @@ if (YAAMP_ALLOW_EXCHANGE) {
 		WHERE status!=2 AND userid IN (SELECT id FROM accounts WHERE coinid={$coin->id})"));
 	echo "Earnings $reserved2 BTC, ";
 }
-echo "Balance (db) $balance $symbol";
-echo ", Owned ".bitcoinvaluetoa($coin->available)." $symbol";
+echo "Balance (db) $balance $symbol Total:".bitcoinvaluetoa($balance+$coin->immature)." immature";
+echo ", Owned ".bitcoinvaluetoa($coin->available)." $symbol ";
 echo ", Owed ".CHtml::link($owed, "/site/earning?id=".$coin->id)." $symbol ($owed_btc BTC)";
 echo ", ".CHtml::link($reserved1, "/site/payments?id=".$coin->id)." $symbol cleared<br/><br/>";
 

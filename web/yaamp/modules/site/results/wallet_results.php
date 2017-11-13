@@ -15,6 +15,8 @@ $show_details = getparam('showdetails');
 $user = getuserparam(getparam('address'));
 if(!$user) return;
 
+echo "<b>Don't forget to put the password with the coin you want to mine : c=DESIRE or c=PURE or c=DAS</b>";
+
 WriteBoxHeader("Wallet: $user->username");
 
 $refcoin = getdbo('db_coins', $user->coinid);
@@ -226,6 +228,8 @@ if ($refcoin->payout_min) {
 }
 
 echo '</div><br/>';
+
+echo "<b>Don't forget to put the password with the coin you want to mine : c=DESIRE or c=PURE or c=DAS</b>";
 
 $header = "Last 24 Hours Payouts: ".$user->username;
 WriteBoxHeader($header);

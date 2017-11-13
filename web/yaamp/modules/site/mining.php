@@ -26,12 +26,24 @@ echo <<<end
 </div>
 end;
 
+
 if($algo != 'all')
 echo <<<end
+<!--
 <div class="main-left-box">
 <div class="main-left-title">Last 24 Hours Estimate ($algo)</div>
 <div class="main-left-inner"><br>
 <div id='graph_results_price' style='height: $height;'></div><br>
+</div></div><br>
+-->
+<div class="main-left-box">
+<div class="main-left-title">Need some Hashrate :</div>
+<div class="main-left-inner">
+<div align="center">
+<a href="https://www.nicehash.com/buy?refby=3472">
+<img width=500 src="/images/nicehash.png">
+</a>
+</div>
 </div></div><br>
 
 <div class="main-left-box">
@@ -40,6 +52,7 @@ echo <<<end
 <div id='pool_hashrate_results' style='height: $height;'></div><br>
 </div></div><br>
 end;
+
 
 $algo_unit = 'Mh';
 $algo_factor = yaamp_algo_mBTC_factor($algo);

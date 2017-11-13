@@ -53,6 +53,7 @@ function yaamp_get_algos()
 		'veltor',
 		'velvet',
 		'yescrypt',
+		'yescryptR16',
 		'whirlpool',
 		'zr5',
 	);
@@ -104,6 +105,7 @@ function yaamp_get_algo_norm($algo)
 		'velvet'	=> 1.0,
 		'whirlpool'	=> 1.0,
 		'yescrypt'	=> 1.0,
+		'yescryptR16'	=> 1.0,
 		'zr5'		=> 1.0,
 	);
 
@@ -166,6 +168,7 @@ function getAlgoColors($algo)
 		'yescrypt'	=> '#e0d0e0',
 		'zr5'		=> '#d0b0d0',
 
+		'yescryptR16'	=> '#e0d0e0',
 		'MN'		=> '#ffffff', // MasterNode Earnings
 		'PoS'		=> '#ffffff'  // Stake
 	);
@@ -227,9 +230,10 @@ function getAlgoPort($algo)
 		'veltor'	=> 5034,
 		'velvet'	=> 6133,
 		'yescrypt'	=> 6233,
+		'yescryptR16'	=> 6234,
 		'bastion'	=> 6433,
 		'hsr'		=> 7433,
-		'phi'		=> 8333,
+		'phi'		=> 3222,
 		'skunk'		=> 8433,
 		'tribus'	=> 8533,
 	);

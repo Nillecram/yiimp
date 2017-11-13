@@ -318,6 +318,7 @@ class WalletRPC {
 				$this->error = $this->rpc_wallet->error;
 				break;
 			case 'sendmany':
+				debuglog("Hello world");
 				$destinations = array();
 				foreach ($params as $dest) {
 					foreach ($dest as $addr => $amount) {
@@ -325,6 +326,7 @@ class WalletRPC {
 						$destinations[] = (object) $data;
 					}
 				}
+				debuglog("SEND MANY : '$data'");
 				$named_params = array(
 					"mixin"=>arraySafeVal($params, 0, 0),
 					"destinations"=>$destinations,

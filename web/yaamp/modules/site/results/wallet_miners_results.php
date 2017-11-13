@@ -9,6 +9,8 @@ if ($coinid) {
 	$coin = getdbo('db_coins', $coinid);
 }
 
+echo "<b>Don't forget to put the password with the coin you want to mine : c=DESIRE or c=PURE or c=DAS</b>";
+
 echo "<div class='main-left-box'>";
 echo "<div class='main-left-title'>Miners: {$user->username}</div>";
 echo "<div class='main-left-inner'>";
