@@ -208,6 +208,15 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 		strcmp(coind->symbol, "VIVO") == 0 || // VIVO coin
 	   	strcmp(coind->symbol, "INN") == 0 || // Innova coin
 	   	strcmp(coind->symbol, "DSR") == 0 || // Desire coin
+		strcmp(coind->symbol, "DAS") == 0 || // Das coin
+		strcmp(coind->symbol, "FORCE") == 0 || // FORCE coin
+		strcmp(coind->symbol, "XMCC") == 0 || // Monaco coin
+		strcmp(coind->symbol, "MRJA") == 0 || // Monaco coin
+		strcmp(coind->symbol, "ONION") == 0 || // Monaco coin
+		strcmp(coind->symbol, "ITZ") == 0 || // Monaco coin
+		strcmp(coind->symbol, "AMS") == 0 || // Monaco coin
+		strcmp(coind->symbol, "DAS") == 0 || // Monaco coin
+		strcmp(coind->symbol, "LUX") == 0 || // Monaco coin
 		strcmp(coind->symbol, "DASH") == 0 || strcmp(coind->symbol, "DASH-TESTNET") == 0) // Dash 12.1
 	{
 		char script_dests[2048] = { 0 };
@@ -293,7 +302,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 		//debuglog("%s %d dests %s\n", coind->symbol, npayees, script_dests);
 		return;
 	}
-	
+
 	else if(strcmp(coind->symbol, "ENT") == 0)
 	{
 		char script_dests[2048] = { 0 };

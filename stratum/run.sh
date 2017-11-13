@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /var/stratum/config/ && ./run.sh $*
+cd /var/yaamp/stratum/config/ && ./run.sh $*
 

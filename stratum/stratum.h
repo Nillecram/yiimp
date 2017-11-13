@@ -23,6 +23,13 @@
 #include <iostream>
 #include <vector>
 
+#ifndef MSG_NOSIGNAL
+	#define MSG_NOSIGNAL 0x4000 //Do not generate SIGPIPE.
+#endif
+#ifndef MSG_MORE
+	#define MSG_MORE 0x8000  /* Sender will send more.  */
+#endif
+
 using namespace std;
 
 #include "iniparser/src/iniparser.h"
@@ -145,7 +152,7 @@ void sha256_double_hash_hex(const char *input, char *output, unsigned int len);
 #include "algos/neoscrypt.h"
 #include "algos/lyra2re.h"
 #include "algos/lyra2v2.h"
-#include "algos/lyra2z.h"
+#include "algos/lyra2z-yiimp.h"
 #include "algos/blake.h"
 #include "algos/blakecoin.h"
 #include "algos/blake2.h"

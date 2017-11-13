@@ -39,6 +39,7 @@ extern "C" {
 #include <stdlib.h> /* for size_t */
 
 void yescrypt_hash(const char* input, char* output, uint32_t len);
+void yescryptR16_hash(const char* input, char* output, uint32_t len);
 
 /**
  * crypto_scrypt(passwd, passwdlen, salt, saltlen, N, r, p, buf, buflen):
@@ -293,6 +294,13 @@ extern int yescrypt_kdf(const yescrypt_shared_t * __shared,
     uint64_t __N, uint32_t __r, uint32_t __p, uint32_t __t,
     yescrypt_flags_t __flags,
     uint8_t * __buf, size_t __buflen);
+
+extern int yescrypt_kdf_R16(const yescrypt_shared_t * shared, 
+    yescrypt_local_t * local,
+    const uint8_t * passwd, size_t passwdlen,
+    const uint8_t * salt, size_t saltlen,
+    uint64_t N, uint32_t r, uint32_t p, uint32_t t, yescrypt_flags_t flags,
+    uint8_t * buf, size_t buflen);
 
 /**
  * yescrypt_r(shared, local, passwd, passwdlen, setting, buf, buflen):
