@@ -18,3 +18,5 @@ web/serverconfig.php
 web/assets/
 *.rej
 *.orig
+
+stratum/iniparser/libiniparser\.so\.0
