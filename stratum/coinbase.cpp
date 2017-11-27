@@ -208,6 +208,7 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 		strcmp(coind->symbol, "VIVO") == 0 || // VIVO coin
 	   	strcmp(coind->symbol, "INN") == 0 || // Innova coin
 	   	strcmp(coind->symbol, "DSR") == 0 || // Desire coin
+	   	strcmp(coind->symbol, "XYLO") == 0 || // XYLO coin
 		strcmp(coind->symbol, "DAS") == 0 || // Das coin
 		strcmp(coind->symbol, "FORCE") == 0 || // FORCE coin
 		strcmp(coind->symbol, "XMCC") == 0 || // Monaco coin
