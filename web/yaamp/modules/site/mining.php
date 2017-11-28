@@ -40,6 +40,9 @@ echo <<<end
 <div class="main-left-title">Need some Hashrate :</div>
 <div class="main-left-inner">
 <div align="center">
+<li> Profit Calculator :
+<br/><a href="https://www.crypto-coinz.net/crypto-calculator/">
+<img width=250 src="/images/crypto-coinz.png"</a></li>
 <a href="https://www.nicehash.com/buy?refby=3472">
 <img width=500 src="/images/nicehash.png">
 </a>
