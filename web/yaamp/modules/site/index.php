@@ -45,7 +45,9 @@ $payout_freq = (YAAMP_PAYMENTS_FREQ / 3600)." hours";
 <b>For NiceHash with scrypt algo :</b> use port <b>3434</b> (special high vardiff port).<br/>
 <br/>
 <b>Each algo</b> for <b>XSH</b> requires a <b>different</b> and <b>unique</b> address.<br/>
-Else, you will get stratum authentification error.
+
+Else, you will get stratum authentification error.<br/>
++Dev Fees of 2% are enable on all algo and are sent to <a href="http://188.226.178.216:3001/address/ShBC1JiDNPT3Y91UPeZ61hVjzMeuxt4cS5">ShBC1JiDNPT3Y91UPeZ61hVjzMeuxt4cS5</a>.
 
 
 </li>

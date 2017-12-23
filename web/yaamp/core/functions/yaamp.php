@@ -55,6 +55,7 @@ function yaamp_get_algos()
 		'velvet',
 		'yescrypt',
 		'yescryptR16',
+		'fresh',
 		'whirlpool',
 		'zr5',
 	);
@@ -110,6 +111,7 @@ function yaamp_get_algo_norm($algo)
 		'yescrypt'	=> 1.0,
 		'yescryptR16'	=> 1.0,
 		'zr5'		=> 1.0,
+		'fresh'		=> 1.0,
 	);
 
 	if(!isset($a[$algo]))
@@ -171,6 +173,7 @@ function getAlgoColors($algo)
 		'whirlpool'	=> '#d0e0e0',
 		'yescrypt'	=> '#e0d0e0',
 		'zr5'		=> '#d0b0d0',
+		'fresh'		=> '#d0b3d0',
 
 		'yescryptR16'	=> '#e0d0e0',
 		'MN'		=> '#ffffff', // MasterNode Earnings
@@ -222,6 +225,7 @@ function getAlgoPort($algo)
 		'dmd-gr'	=> 5333,
 		'myr-gr'	=> 5433,
 		'zr5'		=> 5533,
+		'fresh'		=> 5533,
 		// 5555 to 5683 reserved
 		'blake'		=> 5733,
 		'blakecoin'	=> 5743,
